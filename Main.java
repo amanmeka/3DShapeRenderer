@@ -27,7 +27,7 @@ public class Main {
                 g2.fillRect(0, 0, getWidth(), getHeight());
 
                 // rendering magic will happen here
-                java.awt.List tris = new ArrayList<>();
+                ArrayList tris = new ArrayList<>();
                 tris.add(new Triangle(new Vertex(100, 100, 100),
                         new Vertex(-100, -100, 100),
                         new Vertex(-100, 100, -100),
@@ -202,8 +202,8 @@ public class Main {
         }
     }
 
-    public static java.awt.List inflate(java.awt.List tris) {
-        List result = new ArrayList<>();
+    public static ArrayList inflate(ArrayList tris) {
+        ArrayList result = new ArrayList<>();
         for  (int i = 0; i < tris.size(); i++) {
 
             Triangle t = (Triangle) tris.get(i);
